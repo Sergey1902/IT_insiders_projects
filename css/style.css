@@ -27,7 +27,7 @@ h1 {
     color: #0B132A;
 }
 
-h2, .features-text-bold, .main-plan-h2 {
+h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-third, .plan__subsctibe-title {
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
@@ -41,7 +41,7 @@ h2, .features-text-bold, .main-plan-h2 {
     color: #4F5665;
 }
 
-.intro__textdescription, .intro__paragraph, .intro__text-bullet, .main-plantext-description, .plan-bullet-text-description {
+.intro__textdescription, .intro__paragraph, .intro__text-bullet, .plan__title-description, .plan__description-paragraph, .plan__subscribe-description, .footer__logo-subtitle {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -73,7 +73,7 @@ h2, .features-text-bold, .main-plan-h2 {
     color: #0B132A;
 }
 
-.rubik-18-bold {
+.plan__name-text {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -81,7 +81,7 @@ h2, .features-text-bold, .main-plan-h2 {
     color: #0B132A;
 }
 
-.count-text-bold {
+.plan__price {
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -105,6 +105,22 @@ h2, .features-text-bold, .main-plan-h2 {
     color: #4F5665;
 }
 
+.plan__country-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.plan__comment-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #0B132A;
+}
+
 
 /* Шрифты кнопок */
 .header__button-signin-text {
@@ -124,7 +140,7 @@ h2, .features-text-bold, .main-plan-h2 {
     color: #FFFFFF;
 }
 
-.button-oval-text-bold {
+.plan__button-white-text {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -132,7 +148,7 @@ h2, .features-text-bold, .main-plan-h2 {
     color: #F53838;
 }
 
-.button-oval-text-bold-white{
+.plan__button-red-text {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -250,35 +266,35 @@ h2, .features-text-bold, .main-plan-h2 {
 
 /*MAIN plan*/
 
-.main-plan-wrapper {
+.plan__wrapper {
     max-width: 1090px;
     margin-left: 174px;
     margin-right: 176px;
 }
 
-.main-plan-plantext {
+.plan__title {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-plan-h2 {
+.plan__title-main {
     margin-top: 207px;
     margin-bottom: 20px;
 }
 
-.main-plantext-description {
+.plan__title-description {
     text-align: center;
     margin-bottom: 60px;
 }
 
-.plans-cards {
+.plan__cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.plans-card {
+.plan__card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,34 +305,48 @@ h2, .features-text-bold, .main-plan-h2 {
     border-radius: 10px;
 }
 
-.plan-bullets-wrapper {
+.plan__card-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 80px;
 }
 
-.plan-bullet {
+.plan__description-point {
     display: flex;
     margin: 0;
 }
 
-.plan-bullets {
+.plan__description {
     margin-top: 20px;
 }
 
-.plan-bullet-text-description {
+.plan__description-paragraph {
     margin: 10px 0px 10px 25px;
 }
 
-.rubik-18-bold {
+.plan__card-title {
     margin: 30px 0px 0px 0px;
 }
 
-.price-button {
+.plan__price-block {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 130px;
 }
 
+.plan__title-second {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.plan__img {
+    margin-top: 155px;
+}
+
+.plan__companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
