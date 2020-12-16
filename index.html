@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link r​el​="​preload"​ href="css/fonts.css" ​a​s​="​font"​>
-    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="​preload"​ href="css/fonts.css" ​a​s​="​font"​>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,11 +15,11 @@
 <body>
     <header class="header">    
         <div class="header__wrapper">
-            <a class="header__logo" href="https://google.ru">
+            <a class="header__logo" href="#">
                 <img src="img/Logo.svg" alt="logo">
             </a>
             <nav class="header__navigation">
-                <ul>
+                <ul class="header__navigation-ul">
                     <li><a href="#" class="header__link">About</a></li>
                     <li><a href="#" class="header__link">Features</a></li>
                     <li><a href="#" class="header__link">Pricing</a></li>
@@ -28,11 +28,11 @@
                 </ul>              
             </nav>
             <div class="header__buttons">
-                <button class="header__button-signin">
-                    <span class="header__button-signin-text">Sign In</span>
+                <button class="header__button--signin">
+                    <span class="header__button--signin-text">Sign In</span>
                 </button>
-                <button class="header__button-oval-white">
-                    <span class="header__button-oval-white-text">Sign Up</span>
+                <button class="header__button--oval-white">
+                    <span class="header__button--oval-white-text">Sign Up</span>
                 </button>
             </div>
         </div>
@@ -42,14 +42,14 @@
         <section class="intro">
             <div class="intro__main">
                 <div class="intro__getstarted">
-                    <h1 class="intro__title">Want anything to be easy </br> with <strong>LaslesVPN.</strong></h1>
-                    <p class="intro__textdescription">Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong><br>discover interesting features from us.</p>
-                    <button class="intro__main-button-rectangle">
-                        <span class="intro__main-button-rectangle-text">Get Started</span>
+                    <h1 class="intro__title">Want anything to be easy <br> with <strong>LaslesVPN.</strong></h1>
+                    <p class="intro__text--description">Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong><br>discover interesting features from us.</p>
+                    <button class="intro__main-button--rectangle">
+                        <span class="intro__main-button--rectangle-text">Get Started</span>
                     </button>
                 </div>
                 <div class="intro__image">
-                    <img src="img/Illustration1.svg" alt="Illustration">
+                    <img src="img/Illustration1.png" alt="work">
                 </div>
             </div>
 
@@ -59,8 +59,8 @@
                         <div class="intro__content">
                             <img src="img/user.svg" alt="users">
                             <div class="intro__content-flex">
-                                <span class="intro__content-text">90+</span>
-                                <span class="intro__content-normaltext">Users</span>
+                                <span class="intro__content--text">90+</span>
+                                <span class="intro__content--normaltext">Users</span>
                             </div>
                         </div>
         
@@ -71,8 +71,8 @@
                         <div class="intro__content">
                             <img src="img/location.svg" alt="location">
                             <div class="intro__content-flex">
-                                <span class="intro__content-text">30+</span>
-                                <span class="intro__content-normaltext">Locations</span>
+                                <span class="intro__content--text">30+</span>
+                                <span class="intro__content--normaltext">Locations</span>
                             </div>
                         </div>
         
@@ -83,8 +83,8 @@
                         <div class="intro__content">
                             <img src="img/server.svg" alt="location">
                             <div class="intro__content-flex">
-                                <span class="intro__content-text">50+</span>
-                                <span class="intro__content-normaltext">Servers</span>
+                                <span class="intro__content--text">50+</span>
+                                <span class="intro__content--normaltext">Servers</span>
                             </div>
                         </div>
                     </div>
@@ -93,17 +93,12 @@
 
             <div class="intro__features">
                 <div class="intro__image">
-                    <img src="img/Illustration2.svg" alt="Illustration">
+                    <img src="img/Illustration2.png" alt="Illustration">
                 </div>
                 <div class="intro__text">
-                    <div class="intro__title-text">
-                        <h2 class="intro__title-text">We Provide Many <br> Features You Can Use</h2>
-                    </div>
-
-                    <div class="intro__paragraph">
-                        <p class="intro__paragraph">You can explore the features that we provide with fun and <br> have their own functions each feature.</p>
-                    </div>
-
+                    <h2 class="intro__title-text">We Provide Many <br> Features You Can Use</h2>
+                    <p class="intro__paragraph">You can explore the features that we provide with fun and <br> have their own functions each feature.</p>
+                    
                     <div class="intro__text-flex">
                         <img src="img/bx_bxs-check-circle.svg" alt="checkbox">
                         <p class="intro__text-bullet">Powerfull online protection.</p>
@@ -134,7 +129,7 @@
                 <div class="plan__cards">
                     <div class="plan__card">
                         <div class="plan__card-wrapper">
-                            <img src="img/cards-pic.svg" alt="cards">
+                            <img src="img/box.png" alt="box">
                             <h3 class="plan__card-title">Free Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
@@ -157,15 +152,15 @@
                         </div>
                         <div class="plan__price-block">
                             <span class="plan__price">Free</span>
-                            <button class="plan__button-white">
-                                <span class="plan__button-white-text">Select</span>
+                            <button class="plan__button--white">
+                                <span class="plan__button--white-text">Select</span>
                             </button>
                         </div>
                     </div>
 
                     <div class="plan__card">
                         <div class="plan__card-wrapper">
-                            <img src="img/cards-pic.svg" alt="cards">
+                            <img src="img/box.png" alt="box">
                             <h3 class="plan__card-title">Standard Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
@@ -192,15 +187,15 @@
                         </div>
                         <div class="plan__price-block">
                             <span class="plan__price"><b>$9</b>  / mo</span>
-                            <button class="plan__button-white">
-                                <span class="plan__button-white-text">Select</span>
+                            <button class="plan__button--white">
+                                <span class="plan__button--white-text">Select</span>
                             </button>
                         </div>    
                     </div>
 
                     <div class="plan__card">
                         <div class="plan__card-wrapper">
-                            <img src="img/cards-pic.svg" alt="cards">
+                            <img src="img/box.png" alt="box">
                             <h3 class="plan__card-title">Premium Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
@@ -231,8 +226,8 @@
                         </div>    
                         <div class="plan__price-block">
                             <span class="plan__price"><b>$12</b>  / mo</span>
-                            <button class="plan__button-white">
-                                <span class="plan__button-red-text">Select</span>
+                            <button class="plan__button--white">
+                                <span class="plan__button--red-text">Select</span>
                             </button>
                         </div>   
                     </div>
@@ -241,7 +236,7 @@
 
                 <h2 class="plan__title-second">Huge Global Network <br> of Fast VPN</h2>
                 <p class="plan__title-description">See <strong>LaslesVPN</strong> everywhere to make it easier for you when you move <br> locations.</p>
-                <img class="plan__img" src="img/HugeGlobal.svg" alt="map">
+                <img class="plan__img" src="img/HugeGlobal.png" alt="map">
                 <div class="plan__companies">
                     <img src="img/Netflix.svg" alt="Netflix">
                     <img src="img/Reddit.svg" alt="Reddit">
@@ -323,8 +318,8 @@
                         <h2 class="plan__subsctibe-title">Subscribe Now for <br> Get Special Features!</h2>
                         <p class="plan__subscribe-description">Let's subscribe with us and find the fun.</p>
                     </div>
-                    <button class="intro__main-button-rectangle">
-                            <span class="bintro__main-button-rectangle-text">Subscribe now</span>
+                    <button class="intro__button">
+                            <span class="intro__button-text">Subscribe now</span>
                     </button>
                 </div>
             </div>    
@@ -333,7 +328,7 @@
 
     <footer>
         <div class="footer__logo">
-            <a class="footer__link" href="https://google.ru">
+            <a class="footer__link" href="#">
                 <img class="footer__image" src="img/Logo.svg" alt="logo">
             </a>
             <p class="footer__logo-subtitle"> <strong>LaslesVPN </strong>  is a private virtual network that <br> has unique features and has high security.</p>
