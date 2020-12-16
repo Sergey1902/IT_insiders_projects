@@ -41,7 +41,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     color: #4F5665;
 }
 
-.intro__textdescription, .intro__paragraph, .intro__text-bullet, .plan__title-description, .plan__description-paragraph, .plan__subscribe-description, .footer__logo-subtitle {
+.intro__text--description, .intro__paragraph, .intro__text-bullet, .plan__title-description, .plan__description-paragraph, .plan__subscribe-description, .footer__logo-subtitle {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -49,7 +49,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     color: #4F5665;
 }
 
-.intro__content-normaltext {
+.intro__content--normaltext {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -57,7 +57,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     color: #4F5665;
 }
 
-.intro__content-text {
+.intro__content--text {
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -123,16 +123,16 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 
 /* Шрифты кнопок */
-.header__button-signin-text {
+.header__button--signin-text {
     font-size: 16px;
 }
 
-.header__button-oval-white-text {
+.header__button--oval-white-text {
     font-size: 16px;
     color: #F53855;
 }
 
-.intro__main-button-rectangle-text {
+.intro__button-text {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -140,7 +140,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     color: #FFFFFF;
 }
 
-.plan__button-white-text {
+.plan__button--white-text {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -148,7 +148,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     color: #F53838;
 }
 
-.plan__button-red-text {
+.plan__button--red-text {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -175,7 +175,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     padding-top: 45px;
 }
 
-.header__navigation ul {
+.header__navigation-ul{
     display: flex;
     justify-content: center;
     padding-left: 0;
