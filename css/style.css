@@ -309,7 +309,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 .plan__card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     width: 330px;
     height: 760px;
     background: #FFFFFF;
@@ -322,11 +322,12 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 90px;
 }
 
 .plan__description-point {
     display: flex;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 .plan__description {
@@ -334,7 +335,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .plan__description-paragraph {
-    margin: 10px 0px 10px 25px;
+    margin: 0px 0px 0px 25px;
 }
 
 .plan__card-title {
@@ -345,7 +346,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 130px;
+    margin-bottom: 50px;
 }
 
 .plan__title-second {
