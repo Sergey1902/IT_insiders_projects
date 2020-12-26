@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Rubik', 'Arial', sans-serif;
-    background: #FFFFFF
+    background: #F6F6F6;
 }
 
 /* Шрифты текстов */
@@ -77,8 +77,9 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 30px;
     color: #0B132A;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .plan__price {
@@ -97,7 +98,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     color: #AFB5C0;
 }
 
-.header-link {
+.header__link {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -111,6 +112,8 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     font-size: 14px;
     line-height: 30px;
     color: #4F5665;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .plan__comment-text {
@@ -119,6 +122,15 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     font-size: 16px;
     line-height: 30px;
     color: #0B132A;
+}
+
+.footer__c {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #AFB5C0;
 }
 
 
@@ -350,3 +362,136 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     justify-content: space-between;
     align-items: center;
 }
+
+.plan__title-third {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*SLIDER*/
+
+.plan__slider-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.plan__slider-card--red {
+    width: 400px;
+    height: 230px;
+    background: #FFFFFF;
+    border: 2px solid #F53838;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.plan__slider-card--white {
+    width: 400px;
+    height: 230px;
+    border: 2px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.plan__card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 30px 20px 30px;
+}
+
+.plan__card-content--top-left {
+    display: flex;
+}
+
+.plan__card-content--top-right{
+    display: flex;
+}
+
+.plan__card-name {
+    margin-left: 20px;
+}
+
+.plan__img-star {
+    margin-left: 10px;
+}
+
+.plan__card-comment {
+    margin-left: 30px 
+}
+
+.plan__slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.plan__slider-buttons-type{
+    display: flex;
+}
+
+.plan__button-act {
+    margin-right: 150px;
+}
+
+
+.plan__subscribe {
+    width: 1140px;
+    height: 233px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+
+.plan__subscribe-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan__subscribe-text {
+    margin-left: 70px;
+}
+
+.intro__button {
+    margin-right: 70px;
+    margin-top: 86px;
+    height: 60px;
+    width: 250px;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    margin: 64px 0 0 150px;
+}
+
+.footer__icons {
+    display: flex;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 230px;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__link--title {
+    margin-bottom: 20px;
+}
+
+.header__link {
+    margin: 0 0 10px 0;
+}
+
+
