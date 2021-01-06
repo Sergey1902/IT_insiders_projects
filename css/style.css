@@ -88,6 +88,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     font-size: 25px;
     line-height: 30px;
     color: #0B132A;
+    margin-bottom: 20px;
 }
 
 .footer-c {
@@ -133,43 +134,113 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     color: #AFB5C0;
 }
 
+/* BUTTONS стилизация */
 
-/* Шрифты кнопок */
-.header__button--signin-text {
+.button__signin {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 19px;
+    color: #0B132A;
+    border: none;
+    background-color: #F6F6F6;
+    margin-right: 30px;
+    transition: all 1s;
 }
 
-.header__button--oval-white-text {
+.button__signin:hover {
+    color: #F53838;
+}
+
+.button__oval--white {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 19px;
     color: #F53855;
+    padding: 13px 45px 13px 45px;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    background: #F6F6F6;
+    transition: all 1s;
 }
 
-.intro__button-text {
+.button__oval--white:hover {
+    color: #FFFFFF;
+    background: #F53838;
+    box-shadow: 0 5px 15px #F53855;
+}
+
+.button__rectangle {
+    font-family: Rubik;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 25px;
     color: #FFFFFF;
+    padding: 15px 0 15px 0;
+    width: 240px;
+    height: 60px;
+    background: #F53838;
+    border: 1px solid #F53838;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(245, 56, 56, 0.35);;
 }
 
-.plan__button--white-text {
+.button__oval--white-large {
+    font-family: Rubik;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #F53838;
+    padding: 13px 63px 13px 63px;
+    border: 2px solid #F53838;
+    border-radius: 50px;
+    background: #FFFFFF;
+    transition: all 1s;
 }
 
-.plan__button--red-text {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+.button__oval--white-large:hover {
     color: #FFFFFF;
+    background: #F53838;
+    box-shadow: 0 5px 15px #F53855;
 }
 
+.plan__card:hover {
+    border: 2px solid #F53838;
+}
 
-/* BUTTONS стилизация
+.plan__slider-buttons {
+    margin-top: 60px;
+    margin-bottom: 65px;
+    width: 1140px;
+}
+.plan__button-nonact {
+    margin-right: 20px;
+}
+
+.plan__button-nonact a {
+    background-image: url(../img/vector_red.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 30px;
+    border: 2px solid #F53838;
+    border-radius: 60px;
+}
+
+.plan__button-act a {
+    background-image: url(../img/vector_white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F53838;
+    padding: 20px 30px;
+    border: 2px solid #F53838;
+    border-radius: 60px;
+}
+
 /** OVAL-buttons**/
 
 
@@ -189,15 +260,21 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 .header__navigation-ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 0;
     list-style-type: none;
-    width: 350px;
+    width: 400px;
 }
 
 .header__link {
     margin-left: 40px;
     margin-right: 40px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.header__link:hover {
+    color: red;
 }
 
 
@@ -211,12 +288,21 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .intro__getstarted{
-    margin-top: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
 }
 
 .intro__title {
     margin-top: 0;
     margin-bottom: 20px;
+}
+
+.intro__text--description {
+    margin-top: 0;
+    margin-bottom: 60px;
 }
 
 .intro__main-button-rectangle {
@@ -433,10 +519,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     display: flex;
 }
 
-.plan__button-act {
-    margin-right: 150px;
-}
-
 
 .plan__subscribe {
     width: 1140px;
@@ -448,12 +530,22 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 .plan__subscribe-block {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .plan__subscribe-text {
-    margin-left: 70px;
+    margin-right: 300px;
 }
+
+.plan__subscribe-description {
+    margin-top: 0px;
+}
+
+.plan__subsctibe-title {
+    margin-bottom: 10px;
+}
+
 
 .intro__button {
     margin-right: 70px;
