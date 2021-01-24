@@ -15,12 +15,13 @@ body {
     height: 100%;
     font-family: 'Rubik', 'Arial', sans-serif;
     background: #F6F6F6;
+    font-style: normal;
+    font-weight: normal;
 }
 
 /* Шрифты текстов */
 
 h1 {
-    font-style: normal;
     font-weight: 500;
     font-size: 50px;
     line-height: 70px;
@@ -28,7 +29,6 @@ h1 {
 }
 
 h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-third, .plan__subsctibe-title {
-    font-style: normal;
     font-weight: 500;
     font-size: 35px;
     line-height: 50px;
@@ -42,23 +42,18 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .intro__text_description, .intro__paragraph, .intro__text-bullet, .plan__title-description, .plan__description-paragraph, .plan__subscribe-description, .footer__logo-subtitle {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     color: #4F5665;
 }
 
-.intro__content_normaltext {
-    font-style: normal;
-    font-weight: normal;
+.intro__content_normaltext {  
     font-size: 20px;
     line-height: 30px;
     color: #4F5665;
 }
 
 .intro__content_text {
-    font-style: normal;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -66,15 +61,12 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .cards-mark {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     color: #0B132A;
 }
 
 .plan__name-text {
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     color: #0B132A;
@@ -83,7 +75,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .plan__price {
-    font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
@@ -92,24 +83,18 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .footer-c {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     color: #AFB5C0;
 }
 
 .header__link, .footer__link {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     color: #4F5665;
 }
 
 .plan__country-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 30px;
     color: #4F5665;
@@ -118,17 +103,12 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .plan__comment-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     color: #0B132A;
 }
 
 .footer__c {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     color: #AFB5C0;
@@ -137,8 +117,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 /* BUTTONS стилизация */
 
 .button__signin {
-    font-family: Rubik;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -154,8 +132,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .button__oval_white {
-    font-family: Rubik;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -174,8 +150,19 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .button__rectangle {
-    font-family: Rubik;
-    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #F53855;
+    padding: 15px 0 15px 0;
+    width: 240px;
+    height: 60px;
+    background: #F6F6F6;
+    border: 1px solid #F53838;
+    border-radius: 10px;
+}
+
+.button__rectangle:hover {
     font-weight: bold;
     font-size: 16px;
     line-height: 25px;
@@ -186,12 +173,11 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     background: #F53838;
     border: 1px solid #F53838;
     border-radius: 10px;
-    box-shadow: 0 20px 50px rgba(245, 56, 56, 0.35);;
+    box-shadow: 0 20px 50px rgba(245, 56, 56, 0.35);
+    transition: all 1s;
 }
 
 .button__oval_white-large {
-    font-family: Rubik;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -356,6 +342,11 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 .intro__text-bullet {
     margin: 15px;
+}
+
+.intro__text-bullet::before {
+    content: "";
+    background-image: url(../img/bx_bxs-check-circle.svg);
 }
 
 .intro__title-text {
@@ -579,6 +570,10 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     justify-content: space-between;
 }
 
+.footer__link, .footer__link_title  {
+    text-decoration: none;
+}
+
 .footer__link_title {
     margin-bottom: 20px;
 }
@@ -586,5 +581,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 .header__link {
     margin: 0 0 10px 0;
 }
+
 
 
