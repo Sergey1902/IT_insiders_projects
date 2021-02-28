@@ -9,15 +9,22 @@
     <link rel="​preload"​ href="css/fonts.css" ​a​s​="​font"​>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 
 <body>
-    <footer class="header">    
+    <header class="header">    
         <div class="header__wrapper">
-            <a class="header__logo" href="#">
-                <img src="img/Logo.svg" alt="logo">
-            </a>
+            <div class="header__title">
+                <a class="header__logo" href="#">
+                    <svg class="logo">
+                        <use xlink:href="img/_sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <a class="logo__text" href="#">Lasles<b>VPN</b> </a>
+            </div>
+
             <nav class="header__navigation">
                 <ul class="header__navigation-ul">
                     <li><a href="#" class="header__link">About</a></li>
@@ -28,11 +35,11 @@
                 </ul>              
             </nav>
             <div class="button">
-                <button class="button__signin">Sign In</button>
+                <button class="button button__oval_white">Sign In</button>
                 <button class="button button__oval_white">Sign Up</button>
             </div>
         </div>
-    </footer>
+    </header>
 
     <main>
         <section class="intro">
@@ -45,7 +52,10 @@
                     </div>                    
                 </div>
                 <div class="intro__image">
-                    <img src="img/Illustration1.png" alt="work">
+                    <picture>
+                        <source srcset="img/Illustration-smaller1.png" media="(max-width: 768px)">
+                        <img src="img/Illustration1.png" alt="work">
+                    </picture>
                 </div>
             </div>
 
@@ -53,7 +63,10 @@
                 <div class="intro__summary-wrapper">
                     <div class="intro__summary-flex">
                         <div class="intro__content">
-                            <img src="img/user.svg" alt="users">
+                            <!-- <img src="img/user.svg" alt="users"> -->
+                            <svg class="user">
+                                <use xlink:href="img/_sprite.svg#user"></use>
+                              </svg>
                             <div class="intro__content-flex">
                                 <span class="intro__content_text">90+</span>
                                 <span class="intro__content_normaltext">Users</span>
@@ -88,27 +101,26 @@
             </div>
 
             <div class="intro__features">
-                <div class="intro__image">
-                    <img src="img/Illustration2.png" alt="Illustration">
+                <div class="intro__features-image">
+                    <picture>
+                        <source srcset="img/Illustration2-smaller.png" media="(max-width: 768px)">
+                        <img src="img/Illustration2.png" alt="work">
+                    </picture>
                 </div>
                 <div class="intro__text">
                     <h2 class="intro__title-text">We Provide Many <br> Features You Can Use</h2>
                     <p class="intro__paragraph">You can explore the features that we provide with fun and <br> have their own functions each feature.</p>
                     
                     <div class="intro__text-flex">
-
                         <p class="intro__text-bullet">Powerfull online protection.</p>
                     </div>
                     <div class="intro__text-flex">
-                        <img src="img/bx_bxs-check-circle.svg" alt="checkbox">
                         <p class="intro__text-bullet">Internet without borders.</p>
                     </div>
                     <div class="intro__text-flex">
-                        <img src="img/bx_bxs-check-circle.svg" alt="checkbox">
                         <p class="intro__text-bullet">Supercharged VPN</p>
                     </div>
                     <div class="intro__text-flex">
-                        <img src="img/bx_bxs-check-circle.svg" alt="checkbox">
                         <p class="intro__text-bullet">No specific time limits.</p>
                     </div>
                 </div>
@@ -129,19 +141,15 @@
                             <h3 class="plan__card-title">Free Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Unlimited Bandwitch</p>
                                 </div>
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Encrypted Connection</p>
                                 </div>
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">No Traffic Logs</p>
                                 </div>        
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Works on All Devices</p>
                                 </div>
                             </div>
@@ -160,23 +168,18 @@
                             <h3 class="plan__card-title">Standard Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Unlimited Bandwitch</p>
                                 </div>
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Encrypted Connection</p>
                                 </div>
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Yes Traffic Logs</p>
                                 </div>        
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Works on All Devices</p>
                                 </div>
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Connect Anyware</p>
                                 </div>
                             </div>
@@ -195,27 +198,21 @@
                             <h3 class="plan__card-title">Premium Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Unlimited Bandwitch</p>
                                 </div>
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Encrypted Connection</p>
                                 </div>
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Yes Traffic Logs</p>
                                 </div>        
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Works on All Devices</p>
                                 </div>
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Connect Anyware</p>
                                 </div>
                                 <div class="plan__description-point">
-                                    <img src="img/vector.svg" alt="vector">
                                     <p class="plan__description-paragraph">Connect Anyware</p>
                                 </div>
                             </div>
@@ -232,13 +229,17 @@
 
                 <h2 class="plan__title-second">Huge Global Network <br> of Fast VPN</h2>
                 <p class="plan__title-description">See <strong>LaslesVPN</strong> everywhere to make it easier for you when you move <br> locations.</p>
-                <img class="plan__img" src="img/HugeGlobal.png" alt="map">
+                <picture class="map">
+                    <source srcset="img/HugeGlobal-smaller.png" media="(max-width: 768px)">
+                    <source srcset="img/HugeGlobal-smaller.png" media="(max-width: 1024px)">    
+                    <img src="img/HugeGlobal.png" alt="work">
+                </picture>
                 <div class="plan__companies">
-                    <img src="img/Netflix.svg" alt="Netflix">
-                    <img src="img/Reddit.svg" alt="Reddit">
-                    <img src="img/Amazon.svg" alt="Amazon">
-                    <img src="img/Discord.svg" alt="Discord">
-                    <img src="img/Spotify.svg" alt="Spotify">
+                    <img src="img/Netflix.png" alt="Netflix">
+                    <img src="img/Reddit.png" alt="Reddit">
+                    <img src="img/Amazon.png" alt="Amazon">
+                    <img src="img/Discord.png" alt="Discord">
+                    <img src="img/Spotify.png" alt="Spotify">
                 </div>
                 <h2 class="plan__title-third">Trusted by Thousands of <br> Happy Customer</h2>
                 <p class="plan__title-description">These are the stories of our customers who have joined us with great <br> pleasure when using this crazy feature.</p>
@@ -328,7 +329,7 @@
                 <div class="plan__subscribe">
                     <div class="plan__subscribe-block">
                         <div class="plan__subscribe-text">
-                            <h2 class="plan__subsctibe-title">Subscribe Now for <br> Get Special Features!</h2>
+                            <h2 class="plan__subscribe-title">Subscribe Now for <br> Get Special Features!</h2>
                             <p class="plan__subscribe-description">Let's subscribe with us and find the fun.</p>
                         </div>
                         <div class="button">
@@ -342,13 +343,18 @@
 
     <footer class="footer">
         <div class="footer__logo">
-            <a class="footer__link" href="#">
-                <img class="footer__image" src="img/Logo.svg" alt="logo">
-            </a>
+                <div class="header__title">
+                    <a class="header__logo" href="#">
+                        <svg class="logo">
+                            <use xlink:href="img/_sprite.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <a class="logo__text" href="#">Lasles<b>VPN</b> </a>
+                </div>
             <p class="footer__logo-subtitle"> <strong>LaslesVPN </strong>  is a private virtual network that <br> has unique features and has high security.</p>
             <div class="footer__icons">
                 <div class="footer__facebook">
-                    <svg class="icon">
+                    <svg class="facebook">
                         <use xlink:href="img/_sprite.svg#Facebook"></use>
                     </svg>
                 </div>
