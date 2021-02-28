@@ -35,6 +35,14 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     color: #0B132A;
 }
 
+.logo__text {
+    font-size: 20px;
+    line-height: 24px;
+    color: #0B132A;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
 .header-nav {
     font-size: 16px;
     line-height: 19px;
@@ -116,21 +124,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 /* BUTTONS стилизация */
 
-.button__signin {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #0B132A;
-    border: none;
-    background-color: #F6F6F6;
-    margin-right: 30px;
-    transition: all 1s;
-}
-
-.button__signin:hover {
-    color: #F53838;
-}
-
 .button__oval_white {
     font-weight: 500;
     font-size: 16px;
@@ -141,6 +134,11 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     border-radius: 50px;
     background: #F6F6F6;
     transition: all 1s;
+}
+
+.button__oval_white:last-child {
+    margin-left: 5px;
+
 }
 
 .button__oval_white:hover {
@@ -244,6 +242,11 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     padding-top: 45px;
 }
 
+.header__title {
+    display: flex;
+    align-items: center;
+}
+
 .header__navigation-ul{
     display: flex;
     justify-content: space-between;
@@ -262,7 +265,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 .header__link:hover {
     color: red;
 }
-
 
 /* MAIN */
 
@@ -342,11 +344,17 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 .intro__text-bullet {
     margin: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .intro__text-bullet::before {
     content: "";
     background-image: url(../img/bx_bxs-check-circle.svg);
+    width: 24px;
+    height: 24px;
+    padding-right: 24px;
+    background-repeat: no-repeat;
 }
 
 .intro__title-text {
@@ -402,10 +410,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     margin-top: 90px;
 }
 
-.plan__description-point {
-    display: flex;
-    margin-bottom: 10px;
-}
 
 .plan__description {
     margin-top: 20px;
@@ -413,6 +417,18 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 .plan__description-paragraph {
     margin: 0px 0px 0px 25px;
+    display: flex;
+    align-items: center;
+}
+
+.plan__description-paragraph::before {
+    content: "";
+    background-image: url(../img/vector.svg);
+    width: 25px;
+    height: 25px;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
 }
 
 .plan__card-title {
@@ -582,5 +598,23 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     margin: 0 0 10px 0;
 }
 
+/*svg*/
+
+.facebook {
+    width: 70px;
+    height: 70px;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+    fill: red;
+}
+
+.user {
+    width: 55px;
+    height: 55px;
+    fill: red;
+}
 
 
