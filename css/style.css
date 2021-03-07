@@ -280,7 +280,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 300px;
 }
 
 .intro__title {
@@ -309,7 +308,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     border-radius: 10px;
 }
 
-.intro__summary-flex{
+.intro__summary-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
