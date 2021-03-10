@@ -34,7 +34,7 @@
                     <li><a href="#" class="header__link">Help</a></li>
                 </ul>              
             </nav>
-            <div class="button">
+            <div class="header__buttons">
                 <button class="button button__oval_white">Sign In</button>
                 <button class="button button__oval_white">Sign Up</button>
             </div>
@@ -53,47 +53,45 @@
                 </div>
                 <div class="intro__image">
                     <picture>
-                        <source srcset="img/Illustration-smaller1.png" media="(max-width: 768px)">
-                        <img src="img/Illustration1.png" alt="work">
+                        <source srcset="img/Illustration-smaller1.png" media="(max-width: 767px)">
+                        <img class="illustration" src="img/Illustration1.png" alt="work" width="530" height="300">
                     </picture>
                 </div>
             </div>
 
             <div class="intro__summary">
-                <div class="intro__summary-wrapper">
-                    <div class="intro__summary-flex">
-                        <div class="intro__content">
-                            <svg class="user">
-                                <use xlink:href="img/_sprite.svg#user"></use>
-                              </svg>
-                            <div class="intro__content-flex">
-                                <span class="intro__content_text">90+</span>
-                                <span class="intro__content_normaltext">Users</span>
-                            </div>
+                <div class="intro__summary-flex">
+                    <div class="intro__content">
+                        <svg class="user">
+                            <use xlink:href="img/_sprite.svg#user"></use>
+                            </svg>
+                        <div class="intro__content-flex">
+                            <span class="intro__content_text">90+</span>
+                            <span class="intro__content_normaltext">Users</span>
                         </div>
-        
-                        <div class="line">
-                            <img src="img/line-vertical.svg" alt="line">
+                    </div>
+    
+                    <div class="line">
+                        <img src="img/line-vertical.svg" alt="line">
+                    </div>
+    
+                    <div class="intro__content">
+                        <img src="img/location.svg" alt="location">
+                        <div class="intro__content-flex">
+                            <span class="intro__content_text">30+</span>
+                            <span class="intro__content_normaltext">Locations</span>
                         </div>
-        
-                        <div class="intro__content">
-                            <img src="img/location.svg" alt="location">
-                            <div class="intro__content-flex">
-                                <span class="intro__content_text">30+</span>
-                                <span class="intro__content_normaltext">Locations</span>
-                            </div>
-                        </div>
-        
-                        <div class="line">
-                            <img src="img/line-vertical.svg" alt="line">
-                        </div>
-        
-                        <div class="intro__content">
-                            <img src="img/server.svg" alt="location">
-                            <div class="intro__content-flex">
-                                <span class="intro__content_text">50+</span>
-                                <span class="intro__content_normaltext">Servers</span>
-                            </div>
+                    </div>
+    
+                    <div class="line">
+                        <img src="img/line-vertical.svg" alt="line">
+                    </div>
+    
+                    <div class="intro__content">
+                        <img src="img/server.svg" alt="location">
+                        <div class="intro__content-flex">
+                            <span class="intro__content_text">50+</span>
+                            <span class="intro__content_normaltext">Servers</span>
                         </div>
                     </div>
                 </div>
@@ -102,7 +100,7 @@
             <div class="intro__features">
                 <div class="intro__features-image">
                     <picture>
-                        <source srcset="img/Illustration2-smaller.png" media="(max-width: 768px)">
+                        <source srcset="img/Illustration2-smaller.png" media="(max-width: 767px)">
                         <img src="img/Illustration2.png" alt="work">
                     </picture>
                 </div>
@@ -136,7 +134,7 @@
                 <div class="plan__cards">
                     <div class="plan__card">
                         <div class="plan__card-wrapper">
-                            <img src="img/box.png" alt="box">
+                            <img src="img/box.png" alt="box" height="165" width="144">
                             <h3 class="plan__card-title">Free Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
@@ -163,7 +161,7 @@
 
                     <div class="plan__card">
                         <div class="plan__card-wrapper">
-                            <img src="img/box.png" alt="box">
+                            <img src="img/box.png" alt="box" height="165" width="144">
                             <h3 class="plan__card-title">Standard Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
@@ -193,7 +191,7 @@
 
                     <div class="plan__card">
                         <div class="plan__card-wrapper">
-                            <img src="img/box.png" alt="box">
+                            <img src="img/box.png" alt="box" height="165" width="144">
                             <h3 class="plan__card-title">Premium Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
@@ -229,10 +227,10 @@
                 <h2 class="plan__title-second">Huge Global Network <br> of Fast VPN</h2>
                 <p class="plan__title-description">See <strong>LaslesVPN</strong> everywhere to make it easier for you when you move <br> locations.</p>
                 <picture class="map">
-                    <source srcset="img/HugeGlobal-smaller.png" media="(max-width: 768px)">
+                    <source srcset="img/HugeGlobal-smaller.png" media="(max-width: 767px)">
                     <source srcset="img/HugeGlobal-smaller.png" media="(max-width: 1024px)">
                     <source srcset="img/HugeGlobal-medium.png" media="(max-width: 1300px)">
-                    <img src="img/HugeGlobal.png" alt="work">
+                    <img class="map" src="img/HugeGlobal.png" alt="work" height="537" width="1060">
                 </picture>
                 <div class="plan__companies">
                     <img src="img/Netflix.png" alt="Netflix">
@@ -320,28 +318,63 @@
 
                             <div class="plan__button-act">
                                 <a href="#"></a>
-                            </div>
-                            
+                            </div>                           
                         </div>
+                    </div>
+                </div>    
+            </div>             
+        </section>
+            <div class="plan__subscribe">
+                <div class="plan__subscribe-block">
+                    <div class="plan__subscribe-text">
+                        <h2 class="plan__subscribe-title">Subscribe Now for <br> Get Special Features!</h2>
+                        <p class="plan__subscribe-description">Let's subscribe with us and find the fun.</p>
+                    </div>
+                    <div class="button">
+                        <button class="button__rectangle">Subscribe now</button>
                     </div>
                 </div>
+            </div>  
+        <section>
 
-                <div class="plan__subscribe">
-                    <div class="plan__subscribe-block">
-                        <div class="plan__subscribe-text">
-                            <h2 class="plan__subscribe-title">Subscribe Now for <br> Get Special Features!</h2>
-                            <p class="plan__subscribe-description">Let's subscribe with us and find the fun.</p>
-                        </div>
-                        <div class="button">
-                            <button class="button__rectangle">Subscribe now</button>
-                        </div>
-                    </div>
-                </div>       
-            </div>             
         </section>
     </main>
 
     <footer class="footer">
+        <details class="footer__list-mobile">
+            <summary>Links</summary>
+            <div class="mobile__flex">
+                <div class="footer__list-product">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link_title"><strong>Product</strong></a>
+                        <a href="#" class="footer__link">Download</a>
+                        <a href="#" class="footer__link">Pricing</a>
+                        <a href="#" class="footer__link">Locations</a>
+                        <a href="#" class="footer__link">Server</a>
+                        <a href="#" class="footer__link">Countries</a>
+                        <a href="#" class="footer__link">Blog</a>
+                    </nav>
+                </div>
+                <div class="footer__list-engage">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link_title"><strong>Engage</strong></a>
+                        <a href="#" class="footer__link">LaslesVPN</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                        <a href="#" class="footer__link">Tutorials</a>
+                        <a href="#" class="footer__link">About Us</a>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__link">Terms of Service</a>
+                    </nav>
+                </div>
+                <div class="footer__ist-money">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link_title"><strong>Earn Money</strong></a>
+                        <a href="#" class="footer__link">Affiliate</a>
+                        <a href="#" class="footer__link">Become Partner</a>
+                    </nav>
+                </div>
+            </div>
+        </details>
         <div class="footer__logo">
                 <div class="header__title">
                     <a class="header__logo" href="#">
@@ -367,6 +400,7 @@
             </div>
             <p class="footer__c">©2020LaslesVPN</p>
         </div>
+
         <div class="footer__list">
             <div class="footer__list-product">
                 <nav class="footer__nav">
@@ -396,7 +430,7 @@
                     <a href="#" class="footer__link">Affiliate</a>
                     <a href="#" class="footer__link">Become Partner</a>
                 </nav>
-                </div>
+            </div>
         </div>
     </footer>
 </body>
