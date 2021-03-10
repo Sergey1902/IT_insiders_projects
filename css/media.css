@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 1024px) {
     .header__wrapper {
-        max-width: 900px;    
+        width: 90%;    
     }
     .header__navigation {
         display: none;
@@ -18,14 +18,15 @@
         text-align: center; 
     }
     .intro__image {
-        margin-top: 150px;
+        margin-top: 50px;
         align-items: center;
     }
-    .intro__summary-wrapper {
+    .intro__summary {
         max-width: 300px;
-        height: 500px;
+        min-height: 500px;
         width: 100%;
         margin-top: 50px;
+        margin-bottom: 50px;
     }
     .intro__summary-flex {
         flex-direction: column;
@@ -38,14 +39,14 @@
         margin: 90px 0 0 0;
     }
     .plan__title-main {
-        margin-top: 100px;
-    }
-    .plan__card {
-        width: 220px;
-        height: 400px;
+        margin-top: 50px;
     }
     .plan__description {
         display: none;
+    }
+    .plan__card {
+        height: 350px;
+        width: 190px;
     }
     .plan__card-wrapper {
         margin-top: 10px;
@@ -58,9 +59,6 @@
     }
     .plan__wrapper {
         margin: 0 80px 0 80px;
-    }
-    .map {
-        margin-left: 150px;
     }
     .plan__companies {
         display: none;
@@ -76,8 +74,9 @@
         margin: 10px 0 0 0;
     }
     .plan__subscribe {
-        width: 900px;
-        margin: 50px 0 0 60px;
+        max-width: 900px;
+        width: 90%;
+        margin-top: 50px;
     }
     .plan__subscribe-text {
         margin: 40px 20px;
@@ -90,21 +89,45 @@
     .plan__subscribe-description {
         text-align: center;
     }
+    .footer {
+        margin: 40px 0 0 0;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
     .footer__list {
         display: none;
     }
-    .footer {
-        margin: 40px 0 0 10px;
+    .footer__list-mobile {
+        display: contents;
+        margin-bottom: 50px;
+    }
+    .mobile__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__logo {
+        width: 700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .footer__logo-subtitle {
+        display: none;
     }
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        margin: 20px;
-    }
+@media screen and (max-width: 767px) {
     .header__wrapper {
-        max-width: 600px;
+        max-width: 700px;
+        width: 90%;
         margin-bottom: 100px;
+    }
+    .header__buttons {
+        display: flex;
+        flex-direction: column;
     }
     .button__oval_white {
         padding: 10px 40px 10px 40px; 
@@ -113,7 +136,8 @@
         margin: 10px 0 0 0;
     }
     .intro__main {
-        width: 700px;
+        max-width: 700px;
+        width: 90%;
         margin: 0 auto;
         text-align: center;
     }
@@ -124,15 +148,12 @@
     .intro__text_description {
         margin-bottom: 30px;
     }
-    .intro__summary-wrapper {
+    .intro__summary {
         max-width: 300px;
         height: 500px;
-        width: 100%;
+        width: 90%;
         margin-top: 50px;
         margin-bottom: 50px;
-    }
-    .intro__text-flex {
-        margin-left: 80px;
     }
     .intro__summary-flex {
         flex-direction: column;
@@ -145,19 +166,15 @@
         display: none;
     }
     .intro__features {
-        display: block;
-        width: 700px;
+        max-width: 700px;
+        width: 90%;
         margin: 0 auto;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .intro__text {
         text-align: center;
-    }
-    .intro__text-bullet {
-        margin: 0px 0 10px 70px;
-    }
-    .plan__title-main {
-        margin-top: 100px;
     }
     .plan__wrapper {
         margin: 0 10px 0 10px;
@@ -169,6 +186,7 @@
     .plan__card {
         width: 220px;
         height: 400px;
+        height: 100%;
         margin-bottom: 20px;
     }
     .plan__description {
@@ -183,9 +201,6 @@
     .plan__title-second {
         margin-top: 50px;
     }
-    .map {
-        margin-left: 80px;
-    }
     .plan__companies {
         display: none;
     }
@@ -198,10 +213,17 @@
     }
     .plan__slider-card_white {
         margin: 10px 0 0 0;
+        max-width: 350px;
+        width: 100%;
+    }
+    .plan__slider-card_red {
+        max-width: 350px;
+        width: 100%;
     }
     .plan__subscribe {
-        width: 600px;
-        margin: 50px 0 0 60px;
+        max-width: 350px;
+        width: 900%;
+        margin-top: 50px;
     }
     .plan__subscribe-text {
         margin: 0;
@@ -220,7 +242,30 @@
         display: none;
     }
     .footer {
-        margin: 40px 0 0 10px;
+        margin: 40px 0 0 0;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__list {
+        display: none;
+    }
+    .footer__list-mobile {
+        display: contents;
+        margin-bottom: 50px;
+    }
+    .mobile__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__logo {
+        margin-top: 50px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__logo-subtitle {
+        display: contents;
     }
 }
 

@@ -19,6 +19,12 @@ body {
     font-weight: normal;
 }
 
+.illustration, .map {
+    height: 100%;
+    width: 100%;
+}
+
+
 /* Шрифты текстов */
 
 h1 {
@@ -296,7 +302,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     margin-top: 50px;
 }
 
-.intro__summary-wrapper {
+.intro__summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -406,7 +412,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 
@@ -519,6 +525,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     justify-content: space-between;
     align-items: center;
     margin-left: 150px;
+    width: 80%;
 }
 
 .plan__slider-buttons-type{
@@ -527,11 +534,11 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 
 .plan__subscribe {
-    width: 1140px;
+    max-width: 1140px;
     height: 233px;
     background: #FFFFFF;
     border-radius: 10px;
-    margin-left: 150px;
+    margin: 0 auto;
 }
 
 .plan__subscribe-block {
@@ -614,6 +621,10 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     width: 55px;
     height: 55px;
     fill: red;
+}
+
+.footer__list-mobile {
+    display: none;
 }
 
 
