@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/slider.css">
 </head>
-
 
 <body>
     <header class="header">    
@@ -53,8 +54,8 @@
                 </div>
                 <div class="intro__image">
                     <picture>
-                        <source srcset="img/Illustration-smaller1.png" media="(max-width: 767px)">
-                        <img class="illustration" src="img/Illustration1.png" alt="work" width="530" height="300">
+                        <source type="img/png" media="(max-width: 767px)" srcset="img/Illustration1_1х.png 1х, img/Illustration1_2х.png 2х">
+                        <img class="illustration" src="img/Illustration1_1х.png" alt="work" width="530" height="300">
                     </picture>
                 </div>
             </div>
@@ -100,8 +101,9 @@
             <div class="intro__features">
                 <div class="intro__features-image">
                     <picture>
-                        <source srcset="img/Illustration2-smaller.png" media="(max-width: 767px)">
-                        <img src="img/Illustration2.png" alt="work">
+                        <source srcset="img/Illustration2-smaller.png" media="(max-width: 1024px)">
+                        <source type="img/png" media="(max-width: 767px)" srcset="img/Illustration2_1х.png 1х, img/Illustration2_2х.png 2х">
+                        <img src="img/Illustration2_1х.png" alt="work">
                     </picture>
                 </div>
                 <div class="intro__text">
@@ -134,7 +136,7 @@
                 <div class="plan__cards">
                     <div class="plan__card">
                         <div class="plan__card-wrapper">
-                            <img src="img/box.png" alt="box" height="165" width="144">
+                            <img class="box" src="img/box.png" alt="box" height="165" width="144">
                             <h3 class="plan__card-title">Free Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
@@ -161,7 +163,7 @@
 
                     <div class="plan__card">
                         <div class="plan__card-wrapper">
-                            <img src="img/box.png" alt="box" height="165" width="144">
+                            <img class="box" src="img/box.png" alt="box" height="165" width="144">
                             <h3 class="plan__card-title">Standard Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
@@ -191,7 +193,7 @@
 
                     <div class="plan__card">
                         <div class="plan__card-wrapper">
-                            <img src="img/box.png" alt="box" height="165" width="144">
+                            <img class="box" src="img/box.png" alt="box" height="165" width="144">
                             <h3 class="plan__card-title">Premium Plan</h3>
                             <div class="plan__description">
                                 <div class="plan__description-point">
@@ -230,7 +232,8 @@
                     <source srcset="img/HugeGlobal-smaller.png" media="(max-width: 767px)">
                     <source srcset="img/HugeGlobal-smaller.png" media="(max-width: 1024px)">
                     <source srcset="img/HugeGlobal-medium.png" media="(max-width: 1300px)">
-                    <img class="map" src="img/HugeGlobal.png" alt="work" height="537" width="1060">
+                    <source type="img/png" media="(max-width: 767px)" srcset="img/HugeGlobal_1х.png 1х, img/HugeGlobal_2х.png 2х">
+                    <img class="map" src="img/HugeGlobal_1х.png" alt="work" height="537" width="1060">
                 </picture>
                 <div class="plan__companies">
                     <img src="img/Netflix.png" alt="Netflix">
@@ -243,8 +246,8 @@
                 <p class="plan__title-description">These are the stories of our customers who have joined us with great <br> pleasure when using this crazy feature.</p>
             </div>    
 
-            <div class="slider">
-                <div class="slider__plan">
+            <section class="slider">
+                <!-- <div class="slider__plan">
                     <div class="plan__slider-content">
                         <div class="plan__slider-card_red">
                             <div class="plan__card-content">
@@ -321,8 +324,74 @@
                             </div>                           
                         </div>
                     </div>
-                </div>    
-            </div>             
+                </div>     -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">                        
+                            <div class="plan__slider-card_red">
+                            <div class="plan__card-content">
+                                <div class="plan__card-content_top-left">
+                                    <img src="img/foto1.svg" alt="foto">
+                                    <div class="plan__card-name">
+                                        <h3 class="plan__name-text">Viezh Robert</h3>
+                                        <p class="plan__country-text">Warsaw, Poland</p>
+                                    </div>
+                                </div>
+                                <div class="plan__card-content_top-right">
+                                    <p class="plan__mark">4.5</p>
+                                    <img class="plan__img-star" src="img/star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="plan__card-comment">
+                                <p class="plan__comment-text">“Wow... I am very happy to use this VPN, it <br> turned out to be more than my expectations <br> and so far there have been no problems. <br> LaslesVPN always the best”.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="plan__slider-card_white">
+                            <div class="plan__card-content">
+                                <div class="plan__card-content_top-left">
+                                    <img src="img/foto2.svg" alt="foto">
+                                    <div class="plan__card-name">
+                                        <h3 class="plan__name-text">Yessica Christy</h3>
+                                        <p class="plan__country-text">Shanxi, China</p>
+                                    </div>
+                                </div>
+                                <div class="plan__card-content_top-right">
+                                    <p class="plan__mark">4.5</p>
+                                    <img class="plan__img-star" src="img/star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="plan__card-comment">
+                                <p class="plan__comment-text">“I like it because I like to travel far and still can <br> connect with high speed.”.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="plan__slider-card_white">
+                            <div class="plan__card-content">
+                                <div class="plan__card-content_top-left">
+                                    <img src="img/foto3.svg" alt="foto">
+                                    <div class="plan__card-name">
+                                        <h3 class="plan__name-text">Kim Young Jou</h3>
+                                        <p class="plan__country-text">Seoul, South Korea</p>
+                                    </div>
+                                </div>
+                                <div class="plan__card-content_top-right">
+                                <p class="plan__mark">4.5</p>
+                                <img class="plan__img-star" src="img/star.svg" alt="star">
+                                </div>
+                            </div>
+                            <div class="plan__card-comment">
+                                <p class="plan__comment-text">“This is very unusual for my business that <br> currently requires a virtual private network <br> that has high security.”.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>             
         </section>
             <div class="plan__subscribe">
                 <div class="plan__subscribe-block">
@@ -433,5 +502,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
