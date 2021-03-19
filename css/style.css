@@ -286,6 +286,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
 }
 
 .intro__title {
@@ -303,11 +304,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .intro__summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1140px;
-    height: 200px;
+    max-width: 80%;
     margin: 0 auto;
     background: #FFFFFF;
     margin-top: 103px;
@@ -319,6 +316,8 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    max-width: 80%;
+    padding: 30px;
 }
 
 .intro__content {
@@ -330,11 +329,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     display: flex;
     flex-direction: column;
     margin-left: 36px;
-}
-
-.line {
-    margin-left: 130px;
-    margin-right: 100px;
 }
 
 .intro__features {

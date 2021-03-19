@@ -21,22 +21,21 @@
         margin-top: 50px;
         align-items: center;
     }
-    .intro__summary {
-        max-width: 300px;
-        min-height: 500px;
-        width: 100%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
     .intro__summary-flex {
-        flex-direction: column;
-        height: 400px;
-    }
-    .line {
-        display: none;
+        padding: 20px;
     }
     .intro__features {
         margin: 90px 0 0 0;
+    }
+    .intro__getstarted {
+        width: 100%;
+    }
+    .intro__text {
+        width: 50%;
+    }
+    .box {
+        height: 110px;
+        width: 90px;
     }
     .plan__title-main {
         margin-top: 50px;
@@ -45,7 +44,7 @@
         display: none;
     }
     .plan__card {
-        height: 350px;
+        height: 320px;
         width: 190px;
     }
     .plan__card-wrapper {
@@ -91,7 +90,6 @@
     }
     .footer {
         margin: 40px 0 0 0;
-        height: 500px;
         display: flex;
         flex-direction: column;
     }
@@ -142,7 +140,7 @@
         text-align: center;
     }
     .intro__image {
-        margin-top: 150px;
+        margin-top: 50px;
         align-items: center;
     }
     .intro__text_description {
@@ -151,16 +149,14 @@
     .intro__summary {
         max-width: 300px;
         height: 500px;
-        width: 90%;
-        margin-top: 50px;
         margin-bottom: 50px;
     }
     .intro__summary-flex {
         flex-direction: column;
-        height: 400px;
+        height: 300px;
     }
     .line {
-        margin: 0 30px 0 30px;
+        transform: rotate(90deg);
     }
     .intro__features-image {
         display: none;
@@ -243,7 +239,6 @@
     }
     .footer {
         margin: 40px 0 0 0;
-        height: 450px;
         display: flex;
         flex-direction: column;
     }
@@ -257,6 +252,8 @@
     .mobile__flex {
         display: flex;
         justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .footer__logo {
         margin-top: 50px;
