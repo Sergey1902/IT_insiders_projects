@@ -469,7 +469,8 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .plan__slider-card_red {
-    width: 400px;
+    /* max-width: 350px; */
+    max-width: 400px;
     height: 230px;
     background: #FFFFFF;
     border: 2px solid #F53838;
@@ -478,12 +479,12 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .plan__slider-card_white {
-    width: 400px;
+    /* max-width: 350px; */
+    max-width: 400px;
     height: 230px;
     border: 2px solid #DDDDDD;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-left: 50px;
 }
 
 .plan__card-content {
