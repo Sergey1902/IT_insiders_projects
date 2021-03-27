@@ -357,27 +357,4 @@
     .footer__logo-subtitle {
         display: contents;
     }
-
-    /*burger menu */
-
-
-
-
-/* @media screen and (max-width: 768px) {
-    .header__wrapper {
-        max-width: 768px;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .button {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .button__signin {
-        padding: 15px 10px;
-    }
-    .button__signin {
-        margin-right: 0px;
-    } */
+}
