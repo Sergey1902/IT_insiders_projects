@@ -1,19 +1,29 @@
 var mySwiper = new Swiper('.swiper-container', {
-    //Учимся читать по английски, здесь было написано direction: 'vertical', что значит - вертикальная прокрутка (сверху вниз)
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
     cssMode: true,
 
-    //If we need pagination
+    breakpoints: {
+        1025: {
+            slidesPerView: 3,
+        },
+
+        769: {
+            slidesPerView: 2,
+        },
+
+        350: {
+            slidesPerView: 1,
+        },
+    },
+
     pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,
         clickable: true,
     },
 
-
-    //Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

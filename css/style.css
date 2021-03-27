@@ -272,13 +272,19 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     color: red;
 }
 
+#menu__toggle {
+    opacity: 0;
+}
+
 /* MAIN */
 
 /*VPN intro*/
 .intro__main {
     display: flex;
     justify-content: space-between;
-    margin: 100px 80px 0px 150px;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 
 .intro__getstarted{
@@ -334,7 +340,9 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 .intro__features {
     display: flex;
     justify-content: space-between;
-    margin: 95px 150px 0px 185px;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 .intro__text-flex{
@@ -348,8 +356,8 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .intro__text-bullet::before {
-    content: "";
-    background-image: url(../img/bx_bxs-check-circle.svg);
+    content: '';
+    background-image: url(../img/svg/bx_bxs-check-circle.svg);
     width: 24px;
     height: 24px;
     padding-right: 24px;
@@ -363,9 +371,9 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 /*MAIN plan*/
 
 .plan__wrapper {
-    max-width: 1090px;
-    margin-left: 174px;
-    margin-right: 176px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .plan__title {
@@ -375,7 +383,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 }
 
 .plan__title-main {
-    margin-top: 207px;
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 
@@ -422,7 +430,7 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 .plan__description-paragraph::before {
     content: "";
-    background-image: url(../img/vector.svg);
+    background-image: url(../img/svg/vector.svg);
     width: 25px;
     height: 25px;
     padding-right: 20px;
@@ -567,7 +575,10 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
 
 .footer {
     display: flex;
-    margin: 64px 0 0 150px;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .footer__icons {
@@ -578,7 +589,6 @@ h2, .intro__title-text, .plan__title-main, .plan__title-second, .plan__title-thi
     display: flex;
     justify-content: space-between;
     width: 500px;
-    margin-left: 230px;
 }
 
 .footer__nav {
